@@ -208,3 +208,68 @@
 //     return res;
 // }
 // console.log(pascalTraiangle(5));
+
+
+
+// function validParantheses(s) {
+//     let res = [];
+//     let map = {
+//         ')': '(',
+//         '}': '{',
+//         ']': '['
+//     }
+//     for (let char of s) {
+//         if (char === '{' || char === '[' || char === '(') {
+//             res.push(char);
+//         }
+//         else {
+//             if (res.length === 0) return false;
+//             if (res.pop() !== map[char]) return false;
+//         }
+//     }
+//     return res.length === 0;
+// }
+// console.log(validParantheses('{}{}{}()[]'))
+
+
+// function searchInsertPosition(arr, target) {
+//     let first = 0;
+//     let last = arr.length - 1;
+//     while (first <= last) {
+//         let mid = Math.floor((first + last) / 2);
+//         if (arr[mid] === target)
+//             return mid;
+//         else if (arr[mid] > target)
+//             last = mid - 1;
+//         else
+//             first = mid + 1;
+//     }
+//     return first;
+// }
+// let arr=[1,2,3,4,6,8,9,10]
+// console.log(searchInsertPosition(arr,7));
+
+
+// function reverseInterger(x) {
+//     let s = x.toString();
+//     console.log(s);
+//     return s === s.split('').reverse().join('');
+// }
+// console.log(reverseInterger(121));
+
+
+// function lengthOfLastWord(str) {
+//     let ogStr = str.trim();
+//     let ogStrSplit = ogStr.split(' ');
+//     return ogStrSplit[ogStrSplit.length - 1].length;
+
+// oneLineCode:
+// return str.trim().split('').pop().length;
+// }
+// console.log(lengthOfLastWord(' i am siva '));
+
+
+// function squareRoot(x) {
+//     return Math.floor(Math.sqrt(x));
+// }
+// console.log(squareRoot(4));

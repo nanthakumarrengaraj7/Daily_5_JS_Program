@@ -370,7 +370,7 @@
 // console.log(majorityEle(arr));
 
 
-// day 6
+// day 5
 // function povOfTwo(n) {
 //     if (n <= 0)
 //         return false;

@@ -432,3 +432,75 @@
 //     return res;
 // }
 // console.log(numberToExcelColumnCode('Y'));
+
+// day-6:
+
+// function rotateArrLeftToRight(arr, k) {
+//     for (let i = 0; i < k; i++) {
+//         let last = arr.pop();
+//         arr.unshift(last);
+//     }
+//     return arr;
+// }
+// let arr=[1,2,3,4,5,6];
+// console.log(rotateArr(arr,3))
+
+
+// function rotateArrRightToLeft(arr, k) {
+//     for (let i = 0; i < k; i++) {
+//         let first = arr.shift();
+//         arr.push(first);
+//     }
+//     return arr;
+// }
+// let arr = [1, 2, 3, 4, 5, 6];
+// console.log(rotateArrRightToLeft(arr, 3))
+
+
+// function addDigit(n) {
+//     if (n === 0) return 0;
+//     return 1 + ((n - 1) % 9);
+// }
+// console.log(addDigit(44));
+
+// function powerOfThree(n) {
+//     if (n <= 0) return false;
+//     while (n % 3 === 0) {
+//         n /= 3;
+//     }
+//     return n === 1;
+// }
+// console.log(powerOfThree(27))
+
+
+// function intersectionOfTwoArr(arr1, arr2) {
+//     let res = [];
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr2.includes(arr1[i]) && !res.includes(arr1[i])) {
+//             res.push(arr1[i]);
+//         }
+//     }
+//     return res;
+// }
+// let arr1=[1,2,3,4,5];
+// let arr2=[1,2,3,4];
+// console.log(intersectionOfTwoArr(arr1, arr2))
+
+
+// function fizzBuzzGame(n) {
+//     let res = [];
+//     for (let i = 1; i <= n; i++) {
+//         if (i % 3 === 0 && i % 5 === 0)
+//             res.push("FizzBuzz");
+//         else if (i % 3 === 0) {
+//             res.push("Fizz");
+//         }
+//         else if (i % 5 === 0) {
+//             res.push("Buzz");
+//         }
+//         else
+//             res.push(i.toString());
+//     }
+//     return res;
+// }
+// console.log(fizzBuzzGame(15))
